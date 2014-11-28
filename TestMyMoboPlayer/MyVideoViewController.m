@@ -377,7 +377,16 @@
 
     //恢复锁屏状态
 	[UIApplication sharedApplication].idleTimerDisabled = NO;
+    [self removeAllObserver];
 }
 
+- (void)removeAllObserver
+{
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    
+    [notificationCenter removeObserver:self name:MoboPlayerPlaybackDidFinishNotification object:nil];
+    [notificationCenter removeObserver:self name:MoboPlayerPlaybackFailedNotification object:nil];
+    
+}
 
 @end
