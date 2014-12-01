@@ -214,6 +214,7 @@
     parameters[MoboParameterMinBufferedDuration] = @(0.5f);
     parameters[MoboParameterMaxBufferedDuration] = @(1.0f);
     parameters[MoboParameterRTMPLive] = @(NO);
+    parameters[MoboParameterOpenAudioOnly] = @(YES);
     
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
     [vc softMovieViewControllerWithContentPath:path parameters:parameters];

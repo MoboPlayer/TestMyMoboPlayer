@@ -17,6 +17,7 @@ extern NSString * const MoboParameterMinBufferedDuration;    // Float
 extern NSString * const MoboParameterMaxBufferedDuration;    // Float
 extern NSString * const MoboParameterDisableDeinterlacing;   // BOOL
 extern NSString * const MoboParameterRTMPLive;               // BOOL
+extern NSString * const MoboParameterOpenAudioOnly;          // BOOL
 
 
 @interface MoboViewController : UIViewController
