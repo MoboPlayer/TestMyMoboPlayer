@@ -217,7 +217,16 @@
     
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
     [vc softMovieViewControllerWithContentPath:path parameters:parameters];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
     [self presentViewController:vc animated:YES completion:nil];;
+}
+
+- (void)genThumbnail:(NSTimer *)timer
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Image.png"];
+    
+    [MoboViewController generateThumbnail:(NSString *)[timer userInfo] atPath:filePath atTime:5];
 }
 
 @end

@@ -54,4 +54,18 @@ extern NSString * const MoboParameterRTMPLive;               // BOOL
 - (id) softMovieViewControllerWithContentPath: (NSString *) path
                                    parameters: (NSDictionary *) parameters;
 
+/**
+ *  @description
+ *      generate a thumbnail for the file, and save the png at pngSavePath, at time (second)
+ *  @param
+ *      file media file path
+ *      pngSavePath png save path
+ *      time generate time in second
+ *  @return
+ *      a int value for error code 
+ *      == 0 is success
+ *      <  0 is failed 
+ */
++ (int) generateThumbnail:(NSString *)file atPath:(NSString *)pngSavePath atTime:(int)time;
+
 @end

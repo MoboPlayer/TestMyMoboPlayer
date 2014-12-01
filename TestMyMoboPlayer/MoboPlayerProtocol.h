@@ -264,7 +264,7 @@ typedef NSInteger MoboPlayerSourceType;
  *
  *  NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
  *  parameters[MoboParameterMinBufferedDuration] = @(5.0f);
- *  //and path is the file path
+ *  //and path is the file path
  *  MoboViewController *vc = [[MoboViewController alloc] movieViewControllerWithContentPath:path parameters:parameters]];
  *
  */
@@ -288,8 +288,5 @@ typedef NSInteger MoboPlayerSourceType;
  *      a subtitle string
  */
 - (NSString *) getSubtitleString;
-
-
-
 
 @end
