@@ -69,4 +69,29 @@ extern NSString * const MoboParameterOpenAudioOnly;          // BOOL
  */
 + (int) generateThumbnail:(NSString *)file atPath:(NSString *)pngSavePath atTime:(int)time;
 
+
+/**
+ *  @description
+ *      open subtitle file and then if success you can get subtitle string by
+ *      getExSubtitle method
+ *  @param
+ *      file subtitle file path
+ *  @return
+ *      a int value for error code 
+ *      >= 0 is success
+ *      <  0 is failed 
+ */
++ (int)openSubtitle:(NSString *)file;
+
+/**
+ *  @description
+ *      return a subtitle string at currentTime
+ *  @param
+ *      currentTime the subtitle time you want at time in second
+ *  @return
+ *      a string for subtitle
+ */
+
++ (NSString *)getExSubtitleOnTime:(int)currentTime;
+
 @end

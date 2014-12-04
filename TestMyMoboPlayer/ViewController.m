@@ -219,9 +219,27 @@
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
     [vc softMovieViewControllerWithContentPath:path parameters:parameters];
     [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
     [self presentViewController:vc animated:YES completion:nil];;
 }
 
+- (void)openSubtitle
+{
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path = [bundle pathForResource:@"Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs" ofType:@"srt"];
+    int ret = [MoboViewController openSubtitle:path];
+    if (ret >= 0)
+        [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(getSubtitle) userInfo:nil repeats:YES];
+}
+
+- (void)getSubtitle
+{
+    static int i = 0;
+    NSString *subtitle = [MoboViewController getExSubtitleOnTime:i++];
+    if (subtitle) {
+        NSLog(@"subtitle:%@", subtitle);
+    }
+}
 - (void)genThumbnail:(NSTimer *)timer
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
