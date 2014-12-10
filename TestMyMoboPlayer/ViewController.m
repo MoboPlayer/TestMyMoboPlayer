@@ -133,6 +133,7 @@
                       @"rtmp://flash.oit.duke.edu/vod/_definst_",
                       @"rtmp://218.95.143.34/live/dslive10",
                       @"rtmp://183.62.232.213/fileList/video/flv/1/test.flv",
+                      @"rtmp://183.62.232.213/fileList/test22",
                       ];
 
 }
@@ -213,13 +214,13 @@
     // enable buffering
     parameters[MoboParameterMinBufferedDuration] = @(0.5f);
     parameters[MoboParameterMaxBufferedDuration] = @(1.0f);
-    parameters[MoboParameterRTMPLive] = @(NO);
+    parameters[MoboParameterRTMPLive] = @(YES);
     parameters[MoboParameterOpenAudioOnly] = @(YES);
     
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
     [vc softMovieViewControllerWithContentPath:path parameters:parameters];
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
+//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
+//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
     [self presentViewController:vc animated:YES completion:nil];;
 }
 
