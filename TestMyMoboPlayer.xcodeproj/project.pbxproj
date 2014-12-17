@@ -50,6 +50,8 @@
 		04E40E4B1A1F0C4E001F4B5D /* libmoboplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E40E491A1F0C4E001F4B5D /* libmoboplayer.a */; };
 		7B2E6BAD1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */; };
 		7BD119B71A28134900C9D962 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD119B61A28134900C9D962 /* Entitlements.plist */; };
+		7BDED4F31A4179E200183CB4 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */; };
+		7BDED4F41A4179E200183CB4 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BDED4F21A4179E200183CB4 /* en.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		04E40E4E1A1F0C8E001F4B5D /* MoboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboViewController.h; sourceTree = "<group>"; };
 		7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt"; sourceTree = "<group>"; };
 		7BD119B61A28134900C9D962 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		7BDED4F21A4179E200183CB4 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,8 @@
 		0457A8E91A0B7B0300BBFC90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */,
+				7BDED4F21A4179E200183CB4 /* en.lproj */,
 				0457A8EA1A0B7B0300BBFC90 /* TestMyMoboPlayer-Info.plist */,
 				0457A8EB1A0B7B0300BBFC90 /* InfoPlist.strings */,
 				0457A8EE1A0B7B0300BBFC90 /* main.m */,
@@ -373,6 +379,7 @@
 				7B2E6BAD1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt in Resources */,
 				0457A9321A0B7EF000BBFC90 /* Adele.mp4 in Resources */,
 				046265231A0C6F7900B1CFE9 /* ForwardIcon@2x.png in Resources */,
+				7BDED4F41A4179E200183CB4 /* en.lproj in Resources */,
 				046265241A0C6F7900B1CFE9 /* BackIcon.png in Resources */,
 				046265261A0C6F7900B1CFE9 /* ratioIcon.png in Resources */,
 				0462652E1A0C9C4800B1CFE9 /* 2.simple.mp4 in Resources */,
@@ -382,6 +389,7 @@
 				0457A92D1A0B7C5200BBFC90 /* MyVideoViewController.xib in Resources */,
 				0462652F1A0C9C4C00B1CFE9 /* VE.flv in Resources */,
 				0462652D1A0C9C4300B1CFE9 /* Miniature.mp4 in Resources */,
+				7BDED4F31A4179E200183CB4 /* zh-Hans.lproj in Resources */,
 				0466335C1A10BD580061FBB0 /* test.flv in Resources */,
 				046265281A0C6F7900B1CFE9 /* PauseIcon.png in Resources */,
 				046265251A0C6F7900B1CFE9 /* BackIcon@2x.png in Resources */,
