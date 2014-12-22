@@ -106,6 +106,7 @@
 		04E40E4C1A1F0C8E001F4B5D /* MoboPlayerNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboPlayerNotification.h; sourceTree = "<group>"; };
 		04E40E4D1A1F0C8E001F4B5D /* MoboPlayerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboPlayerProtocol.h; sourceTree = "<group>"; };
 		04E40E4E1A1F0C8E001F4B5D /* MoboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboViewController.h; sourceTree = "<group>"; };
+		7B6A6F461A48173000D64783 /* MoboViewSoftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboViewSoftController.h; sourceTree = "<group>"; };
 		7BD119B61A28134900C9D962 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		7BDED4F21A4179E200183CB4 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
@@ -233,6 +234,7 @@
 		0457A9331A0B95E700BBFC90 /* MoboPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7B6A6F461A48173000D64783 /* MoboViewSoftController.h */,
 				044A4A931A47F71700A6BDC5 /* MyVideoViewController.h */,
 				044A4A941A47F71700A6BDC5 /* MyVideoViewController.m */,
 				044A4A951A47F71700A6BDC5 /* MyVideoViewController.xib */,

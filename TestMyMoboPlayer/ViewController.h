@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MyVideoViewController.h"
+#import "MoboViewSoftController.h"
 
 @interface ViewController : UIViewController
 
@@ -15,5 +16,5 @@
 
 
 @property (strong, nonatomic) MyVideoViewController *myVideoViewController;
-
+@property (strong, nonatomic) MoboViewSoftController *myVideoPlayer;
 @end
