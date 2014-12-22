@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044A4A961A47F71700A6BDC5 /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A4A941A47F71700A6BDC5 /* MyVideoViewController.m */; };
+		044A4A971A47F71700A6BDC5 /* MyVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044A4A951A47F71700A6BDC5 /* MyVideoViewController.xib */; };
+		044A4A9A1A47F74100A6BDC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A4A991A47F74100A6BDC5 /* ViewController.m */; };
 		0457A8E31A0B7B0300BBFC90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A8E21A0B7B0300BBFC90 /* Foundation.framework */; };
 		0457A8E51A0B7B0300BBFC90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A8E41A0B7B0300BBFC90 /* CoreGraphics.framework */; };
 		0457A8E71A0B7B0300BBFC90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A8E61A0B7B0300BBFC90 /* UIKit.framework */; };
@@ -14,7 +17,6 @@
 		0457A8EF1A0B7B0300BBFC90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457A8EE1A0B7B0300BBFC90 /* main.m */; };
 		0457A8F31A0B7B0300BBFC90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457A8F21A0B7B0300BBFC90 /* AppDelegate.m */; };
 		0457A8F61A0B7B0300BBFC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0457A8F41A0B7B0300BBFC90 /* Main.storyboard */; };
-		0457A8F91A0B7B0300BBFC90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457A8F81A0B7B0300BBFC90 /* ViewController.m */; };
 		0457A8FB1A0B7B0300BBFC90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0457A8FA1A0B7B0300BBFC90 /* Images.xcassets */; };
 		0457A9021A0B7B0300BBFC90 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A9011A0B7B0300BBFC90 /* XCTest.framework */; };
 		0457A9031A0B7B0300BBFC90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A8E21A0B7B0300BBFC90 /* Foundation.framework */; };
@@ -28,9 +30,6 @@
 		0457A9201A0B7BEB00BBFC90 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A91F1A0B7BEB00BBFC90 /* MediaPlayer.framework */; };
 		0457A9221A0B7BF300BBFC90 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A9211A0B7BF300BBFC90 /* CoreAudio.framework */; };
 		0457A9241A0B7BF800BBFC90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457A9231A0B7BF800BBFC90 /* AudioToolbox.framework */; };
-		0457A92C1A0B7C5200BBFC90 /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457A92A1A0B7C5200BBFC90 /* MyVideoViewController.m */; };
-		0457A92D1A0B7C5200BBFC90 /* MyVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0457A92B1A0B7C5200BBFC90 /* MyVideoViewController.xib */; };
-		0457A9321A0B7EF000BBFC90 /* Adele.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0457A9311A0B7DDA00BBFC90 /* Adele.mp4 */; };
 		0457A9361A0B965400BBFC90 /* APKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457A9351A0B965400BBFC90 /* APKUtilities.m */; };
 		046265201A0C6F7900B1CFE9 /* PlayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 046265161A0C6F7900B1CFE9 /* PlayIcon.png */; };
 		046265211A0C6F7900B1CFE9 /* PlayIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046265171A0C6F7900B1CFE9 /* PlayIcon@2x.png */; };
@@ -42,13 +41,8 @@
 		046265271A0C6F7900B1CFE9 /* ratioIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0462651D1A0C6F7900B1CFE9 /* ratioIcon@2x.png */; };
 		046265281A0C6F7900B1CFE9 /* PauseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0462651E1A0C6F7900B1CFE9 /* PauseIcon.png */; };
 		046265291A0C6F7900B1CFE9 /* PauseIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0462651F1A0C6F7900B1CFE9 /* PauseIcon@2x.png */; };
-		0462652D1A0C9C4300B1CFE9 /* Miniature.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0462652B1A0C9C3D00B1CFE9 /* Miniature.mp4 */; };
-		0462652E1A0C9C4800B1CFE9 /* 2.simple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0462652A1A0C9C3D00B1CFE9 /* 2.simple.mp4 */; };
-		0462652F1A0C9C4C00B1CFE9 /* VE.flv in Resources */ = {isa = PBXBuildFile; fileRef = 0462652C1A0C9C3D00B1CFE9 /* VE.flv */; };
-		0466335C1A10BD580061FBB0 /* test.flv in Resources */ = {isa = PBXBuildFile; fileRef = 0466335B1A10BD060061FBB0 /* test.flv */; };
 		04E40E4A1A1F0C4E001F4B5D /* libffmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E40E481A1F0C4E001F4B5D /* libffmpeg.a */; };
 		04E40E4B1A1F0C4E001F4B5D /* libmoboplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E40E491A1F0C4E001F4B5D /* libmoboplayer.a */; };
-		7B2E6BAD1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */; };
 		7BD119B71A28134900C9D962 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD119B61A28134900C9D962 /* Entitlements.plist */; };
 		7BDED4F31A4179E200183CB4 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */; };
 		7BDED4F41A4179E200183CB4 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BDED4F21A4179E200183CB4 /* en.lproj */; };
@@ -65,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044A4A931A47F71700A6BDC5 /* MyVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
+		044A4A941A47F71700A6BDC5 /* MyVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
+		044A4A951A47F71700A6BDC5 /* MyVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyVideoViewController.xib; sourceTree = "<group>"; };
+		044A4A981A47F74100A6BDC5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		044A4A991A47F74100A6BDC5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		044A4A9B1A47F82400A6BDC5 /* Miniature.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miniature.mp4; sourceTree = "<group>"; };
 		0457A8DF1A0B7B0300BBFC90 /* TestMyMoboPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMyMoboPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457A8E21A0B7B0300BBFC90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0457A8E41A0B7B0300BBFC90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,8 +76,6 @@
 		0457A8F11A0B7B0300BBFC90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0457A8F21A0B7B0300BBFC90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0457A8F51A0B7B0300BBFC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0457A8F71A0B7B0300BBFC90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0457A8F81A0B7B0300BBFC90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0457A8FA1A0B7B0300BBFC90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0457A9001A0B7B0300BBFC90 /* TestMyMoboPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMyMoboPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457A9011A0B7B0300BBFC90 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,10 +89,6 @@
 		0457A91F1A0B7BEB00BBFC90 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0457A9211A0B7BF300BBFC90 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		0457A9231A0B7BF800BBFC90 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		0457A9291A0B7C5200BBFC90 /* MyVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
-		0457A92A1A0B7C5200BBFC90 /* MyVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
-		0457A92B1A0B7C5200BBFC90 /* MyVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyVideoViewController.xib; sourceTree = "<group>"; };
-		0457A9311A0B7DDA00BBFC90 /* Adele.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Adele.mp4; sourceTree = "<group>"; };
 		0457A9341A0B965400BBFC90 /* APKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APKUtilities.h; sourceTree = "<group>"; };
 		0457A9351A0B965400BBFC90 /* APKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APKUtilities.m; sourceTree = "<group>"; };
 		046265161A0C6F7900B1CFE9 /* PlayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayIcon.png; sourceTree = "<group>"; };
@@ -107,16 +101,11 @@
 		0462651D1A0C6F7900B1CFE9 /* ratioIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratioIcon@2x.png"; sourceTree = "<group>"; };
 		0462651E1A0C6F7900B1CFE9 /* PauseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseIcon.png; sourceTree = "<group>"; };
 		0462651F1A0C6F7900B1CFE9 /* PauseIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PauseIcon@2x.png"; sourceTree = "<group>"; };
-		0462652A1A0C9C3D00B1CFE9 /* 2.simple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.simple.mp4; sourceTree = "<group>"; };
-		0462652B1A0C9C3D00B1CFE9 /* Miniature.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miniature.mp4; sourceTree = "<group>"; };
-		0462652C1A0C9C3D00B1CFE9 /* VE.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = VE.flv; sourceTree = "<group>"; };
-		0466335B1A10BD060061FBB0 /* test.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.flv; sourceTree = "<group>"; };
 		04E40E481A1F0C4E001F4B5D /* libffmpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffmpeg.a; sourceTree = "<group>"; };
 		04E40E491A1F0C4E001F4B5D /* libmoboplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmoboplayer.a; sourceTree = "<group>"; };
 		04E40E4C1A1F0C8E001F4B5D /* MoboPlayerNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboPlayerNotification.h; sourceTree = "<group>"; };
 		04E40E4D1A1F0C8E001F4B5D /* MoboPlayerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboPlayerProtocol.h; sourceTree = "<group>"; };
 		04E40E4E1A1F0C8E001F4B5D /* MoboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboViewController.h; sourceTree = "<group>"; };
-		7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt"; sourceTree = "<group>"; };
 		7BD119B61A28134900C9D962 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		7BDED4F21A4179E200183CB4 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
@@ -198,15 +187,14 @@
 		0457A8E81A0B7B0300BBFC90 /* TestMyMoboPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */,
 				0457A9331A0B95E700BBFC90 /* MoboPlayer */,
 				0457A8F11A0B7B0300BBFC90 /* AppDelegate.h */,
 				0457A8F21A0B7B0300BBFC90 /* AppDelegate.m */,
-				0457A8F41A0B7B0300BBFC90 /* Main.storyboard */,
-				0457A8F71A0B7B0300BBFC90 /* ViewController.h */,
-				0457A8F81A0B7B0300BBFC90 /* ViewController.m */,
 				0457A8FA1A0B7B0300BBFC90 /* Images.xcassets */,
+				0457A8F41A0B7B0300BBFC90 /* Main.storyboard */,
 				0457A8E91A0B7B0300BBFC90 /* Supporting Files */,
+				044A4A981A47F74100A6BDC5 /* ViewController.h */,
+				044A4A991A47F74100A6BDC5 /* ViewController.m */,
 			);
 			path = TestMyMoboPlayer;
 			sourceTree = "<group>";
@@ -245,15 +233,15 @@
 		0457A9331A0B95E700BBFC90 /* MoboPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				044A4A931A47F71700A6BDC5 /* MyVideoViewController.h */,
+				044A4A941A47F71700A6BDC5 /* MyVideoViewController.m */,
+				044A4A951A47F71700A6BDC5 /* MyVideoViewController.xib */,
 				04E40E4C1A1F0C8E001F4B5D /* MoboPlayerNotification.h */,
 				04E40E4D1A1F0C8E001F4B5D /* MoboPlayerProtocol.h */,
 				04E40E4E1A1F0C8E001F4B5D /* MoboViewController.h */,
 				046265151A0C6F5400B1CFE9 /* MoboPlayerResource */,
 				0457A9341A0B965400BBFC90 /* APKUtilities.h */,
 				0457A9351A0B965400BBFC90 /* APKUtilities.m */,
-				0457A9291A0B7C5200BBFC90 /* MyVideoViewController.h */,
-				0457A92A1A0B7C5200BBFC90 /* MyVideoViewController.m */,
-				0457A92B1A0B7C5200BBFC90 /* MyVideoViewController.xib */,
 			);
 			name = MoboPlayer;
 			sourceTree = "<group>";
@@ -287,11 +275,7 @@
 		046265311A0C9C6D00B1CFE9 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				0466335B1A10BD060061FBB0 /* test.flv */,
-				0462652A1A0C9C3D00B1CFE9 /* 2.simple.mp4 */,
-				0462652B1A0C9C3D00B1CFE9 /* Miniature.mp4 */,
-				0462652C1A0C9C3D00B1CFE9 /* VE.flv */,
-				0457A9311A0B7DDA00BBFC90 /* Adele.mp4 */,
+				044A4A9B1A47F82400A6BDC5 /* Miniature.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -376,23 +360,17 @@
 				046265291A0C6F7900B1CFE9 /* PauseIcon@2x.png in Resources */,
 				046265221A0C6F7900B1CFE9 /* ForwardIcon.png in Resources */,
 				046265271A0C6F7900B1CFE9 /* ratioIcon@2x.png in Resources */,
-				7B2E6BAD1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt in Resources */,
-				0457A9321A0B7EF000BBFC90 /* Adele.mp4 in Resources */,
 				046265231A0C6F7900B1CFE9 /* ForwardIcon@2x.png in Resources */,
 				7BDED4F41A4179E200183CB4 /* en.lproj in Resources */,
 				046265241A0C6F7900B1CFE9 /* BackIcon.png in Resources */,
 				046265261A0C6F7900B1CFE9 /* ratioIcon.png in Resources */,
-				0462652E1A0C9C4800B1CFE9 /* 2.simple.mp4 in Resources */,
 				7BD119B71A28134900C9D962 /* Entitlements.plist in Resources */,
 				0457A8FB1A0B7B0300BBFC90 /* Images.xcassets in Resources */,
 				0457A8ED1A0B7B0300BBFC90 /* InfoPlist.strings in Resources */,
-				0457A92D1A0B7C5200BBFC90 /* MyVideoViewController.xib in Resources */,
-				0462652F1A0C9C4C00B1CFE9 /* VE.flv in Resources */,
-				0462652D1A0C9C4300B1CFE9 /* Miniature.mp4 in Resources */,
 				7BDED4F31A4179E200183CB4 /* zh-Hans.lproj in Resources */,
-				0466335C1A10BD580061FBB0 /* test.flv in Resources */,
 				046265281A0C6F7900B1CFE9 /* PauseIcon.png in Resources */,
 				046265251A0C6F7900B1CFE9 /* BackIcon@2x.png in Resources */,
+				044A4A971A47F71700A6BDC5 /* MyVideoViewController.xib in Resources */,
 				046265201A0C6F7900B1CFE9 /* PlayIcon.png in Resources */,
 				0457A8F61A0B7B0300BBFC90 /* Main.storyboard in Resources */,
 				046265211A0C6F7900B1CFE9 /* PlayIcon@2x.png in Resources */,
@@ -430,11 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0457A8F91A0B7B0300BBFC90 /* ViewController.m in Sources */,
 				0457A8F31A0B7B0300BBFC90 /* AppDelegate.m in Sources */,
-				0457A92C1A0B7C5200BBFC90 /* MyVideoViewController.m in Sources */,
 				0457A9361A0B965400BBFC90 /* APKUtilities.m in Sources */,
+				044A4A961A47F71700A6BDC5 /* MyVideoViewController.m in Sources */,
 				0457A8EF1A0B7B0300BBFC90 /* main.m in Sources */,
+				044A4A9A1A47F74100A6BDC5 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

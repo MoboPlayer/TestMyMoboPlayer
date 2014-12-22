@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyVideoViewController.h"
 
-@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIView *movieView;
+
+
+@property (strong, nonatomic) MyVideoViewController *myVideoViewController;
 
 @end
