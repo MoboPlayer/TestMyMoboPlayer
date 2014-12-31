@@ -118,6 +118,8 @@
 		04E40E4E1A1F0C8E001F4B5D /* MoboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboViewController.h; sourceTree = "<group>"; };
 		7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt"; sourceTree = "<group>"; };
 		7B6EF8D41A52A5FB000F9417 /* MoboViewHardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboViewHardController.h; sourceTree = "<group>"; };
+		7B6EF8D61A53AEDE000F9417 /* MoboPlayerErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboPlayerErrorHandle.h; sourceTree = "<group>"; };
+		7B6EF8D71A53AF3F000F9417 /* MoboViewSoftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboViewSoftController.h; sourceTree = "<group>"; };
 		7BD119B61A28134900C9D962 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		7BDED4F21A4179E200183CB4 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
@@ -246,6 +248,8 @@
 		0457A9331A0B95E700BBFC90 /* MoboPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7B6EF8D71A53AF3F000F9417 /* MoboViewSoftController.h */,
+				7B6EF8D61A53AEDE000F9417 /* MoboPlayerErrorHandle.h */,
 				7B6EF8D41A52A5FB000F9417 /* MoboViewHardController.h */,
 				04E40E4C1A1F0C8E001F4B5D /* MoboPlayerNotification.h */,
 				04E40E4D1A1F0C8E001F4B5D /* MoboPlayerProtocol.h */,

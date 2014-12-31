@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "MoboPlayerErrorHandle.h"
 enum {
     MoboPlayerScalingModeNone,       // No scaling
     MoboPlayerScalingModeAspectFit,  // Uniform scale until one dimension fits
@@ -73,11 +73,28 @@ enum {
 };
 typedef NSInteger MoboPlayerSourceType;
 
+enum {
+    MoboPlayerErrorNone,
+    MoboPlayerErrorOpenFile,
+    MoboPlayerErrorStreamInfoNotFound,
+    MoboPlayerErrorStreamNotFound,
+    MoboPlayerErrorCodecNotFound,
+    MoboPlayerErrorOpenCodec,
+    MoboPlayerErrorAllocateFrame,
+    MoboPlayerErroSetupScaler,
+    MoboPlayerErroReSampler,
+    MoboPlayerErroUnsupported,
+};
+typedef NSInteger MoboPlayerError;
+
 @protocol MoboPlayerProtocol <NSObject>
 
 @property (nonatomic) MoboPlayerControlStyle moboControlStyle;
+@property (nonatomic) MoboPlayerScalingMode moboScalingMode;
+@property (nonatomic) MoboPlayerPlaybackState moboPlaybackState;
 @property (nonatomic, readonly) UIView *moboDisplayView;
 @property (nonatomic) BOOL rtmpLive;
+@property (nonatomic, retain) id<MoboPlayerErrorHandle> errorHandleDelegate;
 /**
  *  @description
  *      play the media file, called after movieViewControllerWithContentPath

@@ -40,7 +40,7 @@
     UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleControlsVisible)];
     singleTapGesture.numberOfTapsRequired = 1;
     singleTapGesture.numberOfTouchesRequired = 1;
-    [self.view addGestureRecognizer:singleTapGesture];
+    [self.moboPlayer.moboDisplayView addGestureRecognizer:singleTapGesture];
     
     //单指单击播放界面也可以使用下面代码：
 //    UITapGestureRecognizer *tapOnVideoRecognizer = [[UITapGestureRecognizer alloc]
@@ -52,7 +52,7 @@
     UITapGestureRecognizer *doubleTapsGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeScalingMode)];
     doubleTapsGesture.numberOfTouchesRequired = 1;
     doubleTapsGesture.numberOfTapsRequired = 2;
-    [self.view addGestureRecognizer:doubleTapsGesture];
+    [self.moboPlayer.moboDisplayView addGestureRecognizer:doubleTapsGesture];
     
     //只有当doubleTapGesture识别失败的时候(即识别出这不是双击操作)，singleTapGesture才能开始识别
     [singleTapGesture requireGestureRecognizerToFail:doubleTapsGesture];
@@ -89,6 +89,8 @@
     
     //设置时间间隔，控件的显示与隐藏
     [self _resetIdleTimer];
+    
+    self.moboPlayer.errorHandleDelegate = self;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -386,6 +388,62 @@
     
     [notificationCenter removeObserver:self name:MoboPlayerPlaybackDidFinishNotification object:nil];
     [notificationCenter removeObserver:self name:MoboPlayerPlaybackFailedNotification object:nil];
+    
+}
+
+- (void)handleError:(NSInteger)errorCode
+{
+    NSString *errorString = nil;
+    switch (errorCode) {
+        case MoboPlayerErrorNone:
+            errorString = @"";
+            break;
+            
+        case MoboPlayerErrorOpenFile:
+            errorString = NSLocalizedString(@"Unable to open file", nil);
+            break;
+            
+        case MoboPlayerErrorStreamInfoNotFound:
+            errorString = NSLocalizedString(@"Unable to find stream information", nil);
+            break;
+            
+        case MoboPlayerErrorStreamNotFound:
+            errorString = NSLocalizedString(@"Unable to find stream", nil);
+            break;
+            
+        case MoboPlayerErrorCodecNotFound:
+            errorString = NSLocalizedString(@"Unable to find codec", nil);
+            break;
+            
+        case MoboPlayerErrorOpenCodec:
+            errorString = NSLocalizedString(@"Unable to open codec", nil);
+            break;
+            
+        case MoboPlayerErrorAllocateFrame:
+            errorString = NSLocalizedString(@"Unable to allocate frame", nil);
+            break;
+            
+        case MoboPlayerErroSetupScaler:
+            errorString = NSLocalizedString(@"Unable to setup scaler", nil);
+            break;
+            
+        case MoboPlayerErroReSampler:
+            errorString = NSLocalizedString(@"Unable to setup resampler", nil);
+            break;
+            
+        case MoboPlayerErroUnsupported:
+            errorString = NSLocalizedString(@"The ability is not supported", nil);
+            break;
+    }
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Failure", nil)
+                                                        message:errorString
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"Close", nil)
+                                              otherButtonTitles:nil];
+    
+    [alertView show];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

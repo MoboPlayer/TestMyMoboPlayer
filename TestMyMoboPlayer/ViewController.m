@@ -120,6 +120,7 @@
     [ma addObject:[bundle pathForResource:@"2.simple" ofType:@"mp4"]];
     [ma addObject:[bundle pathForResource:@"VE" ofType:@"flv"]];
     [ma addObject:[bundle pathForResource:@"test" ofType:@"flv"]];
+    [ma addObject:@"/var/1234.flv"];
     
     [ma sortedArrayUsingSelector:@selector(compare:)];
     
@@ -134,6 +135,7 @@
                       @"rtmp://218.95.143.34/live/dslive10",
                       @"rtmp://183.62.232.213/fileList/video/flv/1/test.flv",
                       @"rtmp://183.62.232.213/fileList/test22",
+                      @"http://10.10.1.1/usb/sda1/VIDEO_20141117_163302.mp4",
                       ];
 
 }
@@ -218,11 +220,15 @@
     parameters[MoboParameterOpenAudioOnly] = @(NO);
     
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
-    [vc softMovieViewControllerWithContentPath:path parameters:parameters];
+    [vc movieViewControllerWithContentPath:path parameters:parameters];
+    vc.moboPlayer.moboControlStyle = MoboPlayerControlStyleNone;
+    vc.moboPlayer.moboScalingMode = MoboPlayerScalingModeFill;
 //    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
 //    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
-    [self presentViewController:vc animated:YES completion:nil];;
+    [self presentViewController:vc animated:YES completion:nil];
 }
+
+
 
 - (void)openSubtitle
 {

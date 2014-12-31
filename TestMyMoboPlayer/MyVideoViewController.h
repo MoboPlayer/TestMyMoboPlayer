@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MoboViewController.h"
+#import "MoboPlayerErrorHandle.h"
 
-@interface MyVideoViewController : MoboViewController
+@interface MyVideoViewController : MoboViewController<MoboPlayerErrorHandle>
 
 @property (weak, nonatomic) IBOutlet UILabel *currentPostionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *durationLabel;
