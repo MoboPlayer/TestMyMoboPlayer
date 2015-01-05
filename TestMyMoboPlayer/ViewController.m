@@ -224,7 +224,7 @@
     vc.moboPlayer.moboControlStyle = MoboPlayerControlStyleNone;
     vc.moboPlayer.moboScalingMode = MoboPlayerScalingModeFill;
 //    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
-//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -242,7 +242,9 @@
 - (void)getSubtitle
 {
     static int i = 0;
-    NSString *subtitle = [MoboViewController getExSubtitleOnTime:i++];
+    int s = i*1000;
+    i++;
+    NSString *subtitle = [MoboViewController getSubtitleOnTime:s];
     if (subtitle) {
         NSLog(@"subtitle:%@", subtitle);
     }
