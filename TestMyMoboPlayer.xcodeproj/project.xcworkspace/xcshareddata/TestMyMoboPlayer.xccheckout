@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>34A0948B-56AD-4313-8AFC-0626A3B5D9C9</string>
+	<string>87FA10E4-9CE8-4CEB-8A51-B65BC409D714</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TestMyMoboPlayer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7C5B8072-1B1C-4596-BFF6-3422941C4897</key>
-		<string>https://github.com/sunjun-clov4r/TestMyMoboPlayer.git</string>
+		<key>DDC7E3EE-13E8-450A-91CB-356831644BAD</key>
+		<string>https://github.com/MoboPlayer/TestMyMoboPlayer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TestMyMoboPlayer.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7C5B8072-1B1C-4596-BFF6-3422941C4897</key>
+		<key>DDC7E3EE-13E8-450A-91CB-356831644BAD</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/sunjun-clov4r/TestMyMoboPlayer.git</string>
+	<string>https://github.com/MoboPlayer/TestMyMoboPlayer.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7C5B8072-1B1C-4596-BFF6-3422941C4897</string>
+	<string>DDC7E3EE-13E8-450A-91CB-356831644BAD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7C5B8072-1B1C-4596-BFF6-3422941C4897</string>
+			<string>DDC7E3EE-13E8-450A-91CB-356831644BAD</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TestMyMoboPlayer.2014.11.27.19.40（修改）</string>
+			<string>TestMyMoboPlayer</string>
 		</dict>
 	</array>
 </dict>

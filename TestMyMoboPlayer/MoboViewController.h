@@ -87,11 +87,13 @@ extern NSString * const MoboParameterOpenAudioOnly;          // BOOL
  *  @description
  *      return a subtitle string at currentTime
  *  @param
- *      currentTime the subtitle time you want at time in second
+ *      currentTime the subtitle time you want at time in Millisecond
  *  @return
  *      a string for subtitle
  */
 
-+ (NSString *)getExSubtitleOnTime:(int)currentTime;
++ (NSString *)getSubtitleOnTime:(int)currentTime;
+
++ (int)savingNetworkMedia:(NSString *)inFilename localFile:(NSString *)outFilename;
 
 @end
