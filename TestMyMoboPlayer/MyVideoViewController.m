@@ -40,7 +40,7 @@
     UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleControlsVisible)];
     singleTapGesture.numberOfTapsRequired = 1;
     singleTapGesture.numberOfTouchesRequired = 1;
-    [self.moboPlayer.moboDisplayView addGestureRecognizer:singleTapGesture];
+    [self.view addGestureRecognizer:singleTapGesture];
     
     //单指单击播放界面也可以使用下面代码：
 //    UITapGestureRecognizer *tapOnVideoRecognizer = [[UITapGestureRecognizer alloc]
@@ -52,7 +52,7 @@
     UITapGestureRecognizer *doubleTapsGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeScalingMode)];
     doubleTapsGesture.numberOfTouchesRequired = 1;
     doubleTapsGesture.numberOfTapsRequired = 2;
-    [self.moboPlayer.moboDisplayView addGestureRecognizer:doubleTapsGesture];
+    [self.view addGestureRecognizer:doubleTapsGesture];
     
     //只有当doubleTapGesture识别失败的时候(即识别出这不是双击操作)，singleTapGesture才能开始识别
     [singleTapGesture requireGestureRecognizerToFail:doubleTapsGesture];
