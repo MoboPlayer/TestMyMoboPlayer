@@ -62,12 +62,14 @@ extern NSString * const MoboParameterOpenAudioOnly;          // BOOL
  *      file media file path
  *      pngSavePath png save path
  *      time generate time in second
+ *      width thumbnail width, if width == 0 use the original width
+ *      height thumbnail height, if height == 0 use the original height
  *  @return
  *      a int value for error code 
  *      == 0 is success
  *      <  0 is failed 
  */
-+ (int) generateThumbnail:(NSString *)file atPath:(NSString *)pngSavePath atTime:(int)time;
++ (int) generateThumbnail:(NSString *)file atPath:(NSString *)pngSavePath atTime:(int)time withWidth:(int)width height:(int)height;
 
 
 /**

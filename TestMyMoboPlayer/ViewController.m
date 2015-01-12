@@ -223,8 +223,8 @@
     [vc movieViewControllerWithContentPath:path parameters:parameters];
     vc.moboPlayer.moboControlStyle = MoboPlayerControlStyleNone;
     vc.moboPlayer.moboScalingMode = MoboPlayerScalingModeFill;
-//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
+//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -254,7 +254,7 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Image.png"];
     
-    [MoboViewController generateThumbnail:(NSString *)[timer userInfo] atPath:filePath atTime:5];
+    [MoboViewController generateThumbnail:(NSString *)[timer userInfo] atPath:filePath atTime:5 withWidth:0 height:0];
 }
 
 @end
