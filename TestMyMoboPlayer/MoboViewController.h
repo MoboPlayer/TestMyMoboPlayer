@@ -18,6 +18,7 @@ extern NSString * const MoboParameterMaxBufferedDuration;    // Float
 extern NSString * const MoboParameterDisableDeinterlacing;   // BOOL
 extern NSString * const MoboParameterRTMPLive;               // BOOL
 extern NSString * const MoboParameterOpenAudioOnly;          // BOOL
+extern NSString * const MoboParameterDownloadingPlaying;
 
 
 @interface MoboViewController : UIViewController
@@ -96,6 +97,15 @@ extern NSString * const MoboParameterOpenAudioOnly;          // BOOL
 
 + (NSString *)getSubtitleOnTime:(int)currentTime;
 
-+ (int)savingNetworkMedia:(NSString *)inFilename localFile:(NSString *)outFilename;
+
+/**
+ *  @description
+ *      start save a network media like http, rtsp file
+ *  @param
+ *      inFileName network url, outFileName local file path to save
+ *  @return
+ *      a satus number
+ */
++ (int)startSavingNetworkMedia:(NSString *)inFileName localFile:(NSString *)outFileName;
 
 @end
