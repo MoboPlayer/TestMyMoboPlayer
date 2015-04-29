@@ -56,6 +56,17 @@ extern NSString * const MoboParameterDownloadingPlaying;
 - (id) softMovieViewControllerWithContentPath: (NSString *) path
                                    parameters: (NSDictionary *) parameters;
 
+/*
+ *
+ *
+ *
+ *
+ *
+ */
+
+- (id) softMovieViewControllerWithContentPath: (NSString *) path
+                                   parameters: (NSDictionary *) parameters frame: (CGRect) frame;
+
 /**
  *  @description
  *      generate a thumbnail for the file, and save the png at pngSavePath, at time (second)

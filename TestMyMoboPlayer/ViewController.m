@@ -115,12 +115,17 @@
     // Add all the movies present in the app bundle.
     //添加本地视频
     NSBundle *bundle = [NSBundle mainBundle];
+    
+    /*
     [ma addObject:[bundle pathForResource:@"Adele" ofType:@"mp4"]];
     [ma addObject:[bundle pathForResource:@"Miniature" ofType:@"mp4"]];
     [ma addObject:[bundle pathForResource:@"2.simple" ofType:@"mp4"]];
     [ma addObject:[bundle pathForResource:@"VE" ofType:@"flv"]];
     [ma addObject:[bundle pathForResource:@"test" ofType:@"flv"]];
     [ma addObject:@"/var/1234.flv"];
+    */
+    [ma addObject:[bundle pathForResource:@"1111" ofType:@"mp4"]];
+    [ma addObject:[bundle pathForResource:@"2222" ofType:@"mp4"]];
     
     [ma sortedArrayUsingSelector:@selector(compare:)];
     
@@ -130,12 +135,7 @@
     self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag: 0];
     
     _remoteMovies = @[
-                      @"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
-                      @"rtmp://flash.oit.duke.edu/vod/_definst_",
-                      @"rtmp://218.95.143.34/live/dslive10",
-                      @"rtmp://183.62.232.213/fileList/video/flv/1/test.flv",
-                      @"rtmp://183.62.232.213/fileList/test22",
-                      @"http://10.10.1.1/usb/sda1/VIDEO_20141117_163302.mp4",
+                      @"rtmp://61.133.116.49/flv/mp4:n2014/jxjy/kc213/kj2276/fc/gdxxkjzd201401.mp4",
                       ];
 
 }
@@ -220,7 +220,9 @@
     parameters[MoboParameterOpenAudioOnly] = @(NO);
     
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
-    [vc movieViewControllerWithContentPath:path parameters:parameters];
+    //[vc softMovieViewControllerWithContentPath:path parameters:parameters];
+    [vc softMovieViewControllerWithContentPath:path parameters:parameters frame:CGRectMake(0, 0, 300, 300)];
+    //[vc movieViewControllerWithContentPath:path parameters:parameters];
     vc.moboPlayer.moboControlStyle = MoboPlayerControlStyleNone;
     vc.moboPlayer.moboScalingMode = MoboPlayerScalingModeFill;
     [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];

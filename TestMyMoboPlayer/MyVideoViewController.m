@@ -91,6 +91,7 @@
     [self _resetIdleTimer];
     
     self.moboPlayer.errorHandleDelegate = self;
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated

@@ -10,29 +10,29 @@
 	<string>TestMyMoboPlayer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DDC7E3EE-13E8-450A-91CB-356831644BAD</key>
+		<key>7EECD5C578BEEA4D2049CB42B7766AA2995FB73D</key>
 		<string>https://github.com/MoboPlayer/TestMyMoboPlayer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TestMyMoboPlayer.xcodeproj/project.xcworkspace</string>
+	<string>TestMyMoboPlayer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DDC7E3EE-13E8-450A-91CB-356831644BAD</key>
+		<key>7EECD5C578BEEA4D2049CB42B7766AA2995FB73D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MoboPlayer/TestMyMoboPlayer.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DDC7E3EE-13E8-450A-91CB-356831644BAD</string>
+	<string>7EECD5C578BEEA4D2049CB42B7766AA2995FB73D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DDC7E3EE-13E8-450A-91CB-356831644BAD</string>
+			<string>7EECD5C578BEEA4D2049CB42B7766AA2995FB73D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TestMyMoboPlayer</string>
 		</dict>

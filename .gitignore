@@ -1,2 +1,6 @@
 *.flv
 *.mp4
+.DS_Store
+*.swp
+*~
+wangyu.xcuserdatad/
