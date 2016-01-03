@@ -56,17 +56,6 @@ extern NSString * const MoboParameterDownloadingPlaying;
 - (id) softMovieViewControllerWithContentPath: (NSString *) path
                                    parameters: (NSDictionary *) parameters;
 
-/*
- *
- *
- *
- *
- *
- */
-
-- (id) softMovieViewControllerWithContentPath: (NSString *) path
-                                   parameters: (NSDictionary *) parameters frame: (CGRect) frame;
-
 /**
  *  @description
  *      generate a thumbnail for the file, and save the png at pngSavePath, at time (second)
@@ -107,6 +96,17 @@ extern NSString * const MoboParameterDownloadingPlaying;
  */
 
 + (NSString *)getSubtitleOnTime:(int)currentTime;
+
+/**
+ *  @description
+ *      return player's out date unix timestamp
+ *  @param
+ *      nil
+ *  @return
+ *      an unix timestamp
+ */
+
++ (NSTimeInterval)getOutDateTime;
 
 
 /**
