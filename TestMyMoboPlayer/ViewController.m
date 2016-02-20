@@ -124,8 +124,8 @@
     [ma addObject:[bundle pathForResource:@"test" ofType:@"flv"]];
     [ma addObject:@"/var/1234.flv"];
     */
-    [ma addObject:[bundle pathForResource:@"1111" ofType:@"mp4"]];
-    [ma addObject:[bundle pathForResource:@"2222" ofType:@"mp4"]];
+//    [ma addObject:[bundle pathForResource:@"1111" ofType:@"mp4"]];
+//    [ma addObject:[bundle pathForResource:@"2222" ofType:@"mp4"]];
     
     [ma sortedArrayUsingSelector:@selector(compare:)];
     
@@ -136,6 +136,8 @@
     
     _remoteMovies = @[
                       @"rtmp://61.133.116.49/flv/mp4:n2014/jxjy/kc213/kj2276/fc/gdxxkjzd201401.mp4",
+                      @"http://192.72.1.1/SD/Normal/F/FILE110119-001359F.MOV",
+                      @"http://192.72.1.1/SD/Normal/F/FILE110119-001322F.MOV",
                       ];
 
 }
@@ -220,12 +222,12 @@
     parameters[MoboParameterOpenAudioOnly] = @(NO);
     
     MyVideoViewController *vc = [[MyVideoViewController alloc] initWithNibName:nil bundle:nil];
-    //[vc softMovieViewControllerWithContentPath:path parameters:parameters];
-    [vc softMovieViewControllerWithContentPath:path parameters:parameters frame:CGRectMake(0, 0, 300, 300)];
+    [vc softMovieViewControllerWithContentPath:path parameters:parameters];
+//    [vc softMovieViewControllerWithContentPath:path parameters:parameters frame:CGRectMake(0, 0, 300, 300)];
     //[vc movieViewControllerWithContentPath:path parameters:parameters];
     vc.moboPlayer.moboControlStyle = MoboPlayerControlStyleNone;
     vc.moboPlayer.moboScalingMode = MoboPlayerScalingModeFill;
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
+//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(genThumbnail:) userInfo:path repeats:NO];
 //    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(openSubtitle) userInfo:nil repeats:NO];
     [self presentViewController:vc animated:YES completion:nil];
 }

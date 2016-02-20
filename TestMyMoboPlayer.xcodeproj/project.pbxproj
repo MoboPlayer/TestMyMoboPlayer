@@ -43,12 +43,12 @@
 		046265291A0C6F7900B1CFE9 /* PauseIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0462651F1A0C6F7900B1CFE9 /* PauseIcon@2x.png */; };
 		04E40E4A1A1F0C4E001F4B5D /* libffmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E40E481A1F0C4E001F4B5D /* libffmpeg.a */; };
 		7B2E6BAD1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */; };
+		7B6CB8371C7842DB007F7703 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6CB8361C7842DB007F7703 /* VideoToolbox.framework */; };
+		7B6CB8391C78431B007F7703 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6CB8381C78431B007F7703 /* CoreMedia.framework */; };
 		7BD119B71A28134900C9D962 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD119B61A28134900C9D962 /* Entitlements.plist */; };
 		7BDED4F31A4179E200183CB4 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */; };
 		7BDED4F41A4179E200183CB4 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BDED4F21A4179E200183CB4 /* en.lproj */; };
 		88982ED21AEF834B0095D92B /* libmoboplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88982ED11AEF834B0095D92B /* libmoboplayer.a */; };
-		88FD626D1AEDE1E900793FF5 /* 1111.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88FD626B1AEDE1E900793FF5 /* 1111.mp4 */; };
-		88FD626E1AEDE1E900793FF5 /* 2222.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88FD626C1AEDE1E900793FF5 /* 2222.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +108,8 @@
 		04E40E4D1A1F0C8E001F4B5D /* MoboPlayerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboPlayerProtocol.h; sourceTree = "<group>"; };
 		04E40E4E1A1F0C8E001F4B5D /* MoboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoboViewController.h; sourceTree = "<group>"; };
 		7B2E6BAC1A301A1B0073E63B /* Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Godzilla.2014.BluRay.720p.DTS.x264-CHD.chs.srt"; sourceTree = "<group>"; };
+		7B6CB8361C7842DB007F7703 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		7B6CB8381C78431B007F7703 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7B6EF8D41A52A5FB000F9417 /* MoboViewHardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboViewHardController.h; sourceTree = "<group>"; };
 		7B6EF8D61A53AEDE000F9417 /* MoboPlayerErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboPlayerErrorHandle.h; sourceTree = "<group>"; };
 		7B6EF8D71A53AF3F000F9417 /* MoboViewSoftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoboViewSoftController.h; sourceTree = "<group>"; };
@@ -115,8 +117,6 @@
 		7BDED4F11A4179E200183CB4 /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		7BDED4F21A4179E200183CB4 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		88982ED11AEF834B0095D92B /* libmoboplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmoboplayer.a; sourceTree = "<group>"; };
-		88FD626B1AEDE1E900793FF5 /* 1111.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1111.mp4; sourceTree = "<group>"; };
-		88FD626C1AEDE1E900793FF5 /* 2222.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2222.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6CB8391C78431B007F7703 /* CoreMedia.framework in Frameworks */,
+				7B6CB8371C7842DB007F7703 /* VideoToolbox.framework in Frameworks */,
 				0457A9241A0B7BF800BBFC90 /* AudioToolbox.framework in Frameworks */,
 				04E40E4A1A1F0C4E001F4B5D /* libffmpeg.a in Frameworks */,
 				0457A9221A0B7BF300BBFC90 /* CoreAudio.framework in Frameworks */,
@@ -175,6 +177,8 @@
 		0457A8E11A0B7B0300BBFC90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B6CB8381C78431B007F7703 /* CoreMedia.framework */,
+				7B6CB8361C7842DB007F7703 /* VideoToolbox.framework */,
 				88982ED11AEF834B0095D92B /* libmoboplayer.a */,
 				04E40E481A1F0C4E001F4B5D /* libffmpeg.a */,
 				0457A9231A0B7BF800BBFC90 /* AudioToolbox.framework */,
@@ -287,8 +291,6 @@
 		046265311A0C9C6D00B1CFE9 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				88FD626B1AEDE1E900793FF5 /* 1111.mp4 */,
-				88FD626C1AEDE1E900793FF5 /* 2222.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -341,6 +343,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Shenzhen;
 				TargetAttributes = {
+					0457A8DE1A0B7B0300BBFC90 = {
+						DevelopmentTeam = XUD9S2ZUQB;
+					};
 					0457A8FF1A0B7B0300BBFC90 = {
 						TestTargetID = 0457A8DE1A0B7B0300BBFC90;
 					};
@@ -379,12 +384,10 @@
 				046265241A0C6F7900B1CFE9 /* BackIcon.png in Resources */,
 				046265261A0C6F7900B1CFE9 /* ratioIcon.png in Resources */,
 				7BD119B71A28134900C9D962 /* Entitlements.plist in Resources */,
-				88FD626D1AEDE1E900793FF5 /* 1111.mp4 in Resources */,
 				0457A8FB1A0B7B0300BBFC90 /* Images.xcassets in Resources */,
 				0457A8ED1A0B7B0300BBFC90 /* InfoPlist.strings in Resources */,
 				0457A92D1A0B7C5200BBFC90 /* MyVideoViewController.xib in Resources */,
 				7BDED4F31A4179E200183CB4 /* zh-Hans.lproj in Resources */,
-				88FD626E1AEDE1E900793FF5 /* 2222.mp4 in Resources */,
 				046265281A0C6F7900B1CFE9 /* PauseIcon.png in Resources */,
 				046265251A0C6F7900B1CFE9 /* BackIcon@2x.png in Resources */,
 				046265201A0C6F7900B1CFE9 /* PlayIcon.png in Resources */,
@@ -496,6 +499,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -534,6 +538,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -554,6 +559,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestMyMoboPlayer/TestMyMoboPlayer-Prefix.pch";
 				INFOPLIST_FILE = "TestMyMoboPlayer/TestMyMoboPlayer-Info.plist";
@@ -563,8 +570,9 @@
 					"$(PROJECT_DIR)/TestMyMoboPlayer",
 					"$(PROJECT_DIR)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
@@ -576,6 +584,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestMyMoboPlayer/TestMyMoboPlayer-Prefix.pch";
 				INFOPLIST_FILE = "TestMyMoboPlayer/TestMyMoboPlayer-Info.plist";
@@ -585,8 +595,9 @@
 					"$(PROJECT_DIR)/TestMyMoboPlayer",
 					"$(PROJECT_DIR)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
